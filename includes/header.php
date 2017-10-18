@@ -8,6 +8,7 @@
                 <ul>
                     <li><a href="/">Главная</a></li>
                     <li><a href="/pages/about_me.php">Обо мне</a></li>
+                    <li><a href="/pages/secret_santa.php">Тайный санта</a></li>
                 </ul>
             </nav>
         </div>

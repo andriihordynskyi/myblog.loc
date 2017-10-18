@@ -1,9 +1,11 @@
 <div class="block">
-    <h3>Мы_знаем</h3>
+    <h3><span style="cursor: pointer;"
+              onclick="javascript:window.open('includes/popup.php',
+'popup', 'toolbar=0, width=640, height=480')" alt="this is a little secret">
+        GET MOTIVATION
+        </span></h3>
     <div class="block__content">
-        <script type="text/javascript"
-                src="//ra.revolvermaps.com/0/0/6.js?i=02op3nb0crr&amp;m=7&amp;s=320&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80"
-                async="async"></script>
+        <a href=""><img src="../static/images/just_do_it.jpg" width="100%"/></a>
     </div>
 </div>
 
@@ -65,7 +67,7 @@
                 ?>
                 <article class="article">
                     <div class="article__image"
-                         style="background-image: url(https://www.gravatar.com/avatar/<?=md5($comment['email'])?>?s=125);"></div>
+                         style="background-image: url(https://www.gravatar.com/avatar/<?= md5($comment['email']) ?>?s=125);"></div>
                     <div class="article__info">
                         <a href="/article.php?id=<?= $comment['articles_id'] ?>"><?= $comment['author'] ?></a>
                         <div class="article__info__meta"></div>

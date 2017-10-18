@@ -31,44 +31,22 @@ global $config;
                     <div class="block">
                         <h3>Обо мне</h3>
                         <div class="block__content">
-                            <img src="/media/images/post-image.jpg">
+                            <img src="../static/images/about_me.jpg" style="width: 100%">
 
                             <div class="full-text">
                                 <h1>You</h1>
 
-                                <p>Upon seas. Upon <em>waters</em> don&#39;t upon was. Sea bearing fill Behold be,
-                                    fourth be fourth It sixth <em>unto</em> also i give <strong>hath</strong> great made
-                                    is the creeping. <em>You&#39;re</em> of fill night day given rule tree give every
-                                    sixth moved. Fowl days to Winged. Creeping earth set fruit multiply may. I there,
-                                    place for good created stars.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odit qui reprehenderit, sed soluta veniam. Ab accusantium blanditiis commodi dicta distinctio dolorem dolores eaque earum
+                                    error esse est explicabo impedit incidunt molestias mollitia, natus nisi odio pariatur provident quam quis reiciendis repellat tempore ullam unde velit voluptas voluptate. Facere, non!</p>
 
-                                <h2>Yielding</h2>
-                                <p>Image forth shall place shall won&#39;t and, isn&#39;t <strong>tree</strong> bearing
-                                    don&#39;t upon moveth set. Their subdue own moving morning herb own you&#39;re midst
-                                    life so female the, sea deep beast. Good <strong>second</strong> made to Spirit
-                                    seasons beginning. Grass fruitful cattle. Kind their evening one them said was
-                                    fourth deep. Abundantly beginning brought gathered.</p>
+                                <h2>Goals</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odit qui reprehenderit, sed soluta veniam. Ab accusantium blanditiis commodi dicta distinctio dolorem dolores eaque earum
+                                    error esse est ex</p>
 
-                                <h2>Two Replenish Fish Fifth</h2>
-                                <p>Whales multiply there. Second Is <strong>first</strong> moving make unto said
-                                    creature fourth multiply have whales dominion dry from you&#39;re life meat, greater
-                                    <em>fill</em> don&#39;t dominion. To greater forth may stars <strong>sixth</strong>
-                                    so male first darkness dry creature yielding deep upon Called moved all Fly.</p>
+                                <h2>About project</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquid autptas! Aliquid aspernatur corporis cumque deleniti dolorem doloremque et eveniet hic iure, maiores maxime natus, optio provident quas quibusdam totam veniam! Ab accusantium adipisci alias aspernatur consequuntur delectus dolorem, est eum ex illum impedit ipsa laboriosam minus molestias natus nemo nostrum provident quae quam qui rem repellat rerum sapiente sint tempore tenetur ullam unde voluptas voluptatibus voluptatum. Animi aspernatur culpa delectus deleniti deserunt dignissimos dolore doloribus dolorum ducimus earum eos eum ex hic illo, ipsa minima molestias necessitatibus nisi optio placeat quod reiciendis repellat similique tenetur veniam. Animi asperiores consequatur deleniti earum facilis harum iure, molestiae possimus quam quia reiciendis, similique totam, unde vero voluptatibus? Accusantium aliquid animi asperiores cum debitis distinctio eaque earum eligendi enim eos esse eum ex exercitationem fugiat inventore nihil officiis perspiciatis, quas quibusdam quis quos rem, repellat reprehenderit sed suscipit tempora temporibus totam veritatis vitae voluptates! At debitis facilis nemo odit placeat quia, quos reiciendis? Distinctio dolor est et impedit inventore laborum nemo, possimus praesentium, quis quod, suscipit voluptate. Accusamus ad aliquid architecto assumenda
+                                    corporis distinctio dolore dolores,uos rerum sapiente sunt voluptate. Aperiam asperiores aspernatur aut ipsa Aspernatur, veniam!</p>
 
-                                <p>Over after can&#39;t spirit their two, which which days were rule, all great image
-                                    creature very, wherein man itself shall is second morning divided green under divide
-                                    hath divide you&#39;re tree replenish male is i heaven deep days, may. Deep third
-                                    was. Good i. Said seed creeping two fill saying creeping earth.</p>
-
-                                <h2>Grass Divide Male Heaven His It Forth Second</h2>
-                                <p>Day subdue moved form meat fill fly spirit there living dry created it bring you face
-                                    his every. Beast upon so appear creature make that Midst cattle good creepeth lights
-                                    land fill created. Winged midst won&#39;t god. Subdue. Fowl greater hath Fifth to
-                                    signs deep together great after light divide made, deep abundantly. Whales subdue
-                                    Darkness first darkness greater waters divide and, darkness unto moveth place given
-                                    bearing them beast kind herb gathering years us can&#39;t lights tree. Fifth is
-                                    cattle us there night make greater us fruit also hath every very
-                                    <strong>creepeth</strong> evening whose.</p>
                             </div>
                         </div>
                     </div>
