@@ -14,7 +14,7 @@
         </div>
     </div>
     <?
-    $categories_q = mysqli_query($connection, "SELECT * FROM `articles_categories` WHERE 1");
+    $categories_q = mysqli_query($connection, "SELECT * FROM `articles_categories` WHERE 1 ");
     $categories = [];
     while($cat = mysqli_fetch_array($categories_q)){
         $categories[] = $cat;
