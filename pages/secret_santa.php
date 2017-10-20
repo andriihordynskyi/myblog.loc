@@ -3,21 +3,63 @@ require "../includes/config.php";
 global $config;
 include "../includes/doc.php";
 include "../includes/header.php";
-?>
-<?
-$arr1 = ['name1', 'name2', 'name3', 'name4', 'name5', 'name6'];
-shuffle($arr1);
-$arr2 = $arr1;
-$arr2[] = $arr1[0];
-$final = [];
-shuffle($arr1);
-for ($i = 0; $i <= count($arr1); $i++) {
-        for($j=count($arr1); $j>=0; $j--){
-            $final[$arr1[$i]] = $final[$arr1[$j+1]];
+
+function getSanta($array)
+{
+    $shuffle_arr = $array;
+    shuffle($shuffle_arr);
+
+    $final = [];
+
+    for ($i = 0; $i <= count($array); $i++) {
+        if ($array[$i] != $shuffle_arr[$i]) {
+            $final[] = ['Who' => $array[$i], 'Whom' => $shuffle_arr[$i]];
+        } else {
+            shuffle($shuffle_arr);
         }
+    }
+    foreach ($final as $key => $value) {
+        if ($key == $value) {
+            getSanta($array);
+        } else {
+            continue;
+        }
+    }
+
+    return $final;
 }
 
-print_r($final);
+function getArrayOfPeople()
+{
+    $final = [];
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+        if ($_POST['text']) {
+            foreach (explode("\n", $_POST['text']) as $array) {
+                list($email, $name, $surname, $patronymic) = explode(" ", $array);
+                $final[] = ['email' => $email, 'value' => $name . '_' . $surname . '_' . $patronymic];
+            }
+        }
+    }
+
+    return $final;
+}
+
+function createFiles()
+{
+    $array = getSanta(getArrayOfPeople());
+    foreach ($array as $key => $value) {
+//        print_r($value);
+//        echo "<br>";
+        $sender = $value['Who'];
+        $receiver = $value["Whom"];
+        $f = fopen("files/".trim($sender['value']).".txt", 'w');
+        fwrite($f, $receiver['value']);
+        fclose($f);
+    }
+
+}
+
+createFiles();
 ?>
     <div id="content">
         <div class="container">
