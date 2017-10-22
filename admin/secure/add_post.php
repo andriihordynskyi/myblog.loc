@@ -1,4 +1,6 @@
 <?php
+require_once "session.inc.php";
+require_once "secure.inc.php";
 require "../../includes/config.php";
 global $config;
 include "../../includes/doc.php";
