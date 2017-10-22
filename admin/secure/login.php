@@ -5,29 +5,33 @@ $login = '';
 session_start();
 header("HTTP/1.0 401 Unauthorized");
 require_once "secure.inc.php";
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $login = trim(strip_tags($_POST["login"]));
-    $pw = trim(strip_tags($_POST["pw"]));
-    $ref = trim(strip_tags($_POST["ref"]));
-    if (!$ref) {
-        $ref = "/admin/secure/add_post.php";
-    }
-    if ($login && $pw) {
-        if ($result = userExists($login)) {
-            list($_, $hash) = explode(':', $result);
-            if (checkHash($pw, $hash)) {
-                $_SESSION['admin'] = true;
-                header("Location: $ref");
-                exit;
-            }else{
-                $title="!Неправильное имя пользователя или пароль!";
-            }
-        }else{
-            $title = "Неправильное имя пользователя или пароль!";
+if (!isset($_SESSION['admin'])) {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $login = trim(strip_tags($_POST["login"]));
+        $pw = trim(strip_tags($_POST["pw"]));
+        $ref = trim(strip_tags($_POST["ref"]));
+        if (!$ref) {
+            $ref = "/admin/secure/add_post.php";
         }
-    }else{
-        $title = "Заполните все поля формы!";
+        if ($login && $pw) {
+            if ($result = userExists($login)) {
+                list($_, $hash) = explode(':', $result);
+                if (checkHash($pw, $hash)) {
+                    $_SESSION['admin'] = true;
+                    header("Location: $ref");
+                    exit;
+                } else {
+                    $title = "!Неправильное имя пользователя или пароль!";
+                }
+            } else {
+                $title = "Неправильное имя пользователя или пароль!";
+            }
+        } else {
+            $title = "Заполните все поля формы!";
+        }
     }
+}else{
+    header("Location: ../../index.php");
 }
 ?>
 <!DOCTYPE HTML>

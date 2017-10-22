@@ -10,7 +10,6 @@ require_once "secure.inc.php";
 </head>
 
 <body>
-<h1>Создание пользователя</h1>
 <?
 $login = 'root';
 $password = '1234';
@@ -30,7 +29,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = "Пользователь $login уже существует. Выберите другое имя.";
     }
 }
+
+if ($_POST['logOut']){
+    session_destroy();
+    exit;
+}
 ?>
+<h1>Создание пользователя</h1>
 <h3><?=$result?></h3>
 <p><?=$user?></p>
 <form method="post" action="<?=$_SERVER["PHP_SELF"]?>">
@@ -45,6 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div>
         <input type="submit"/>
     </div>
+</form>
+<h3>Выйти</h3>
+<form method="post" action="<?=$_SERVER['PHP_SELF']?>">
+    <input type="submit" value="Выйти" name="logOut"/>
 </form>
 </body>
 </html>
