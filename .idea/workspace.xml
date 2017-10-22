@@ -11,25 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="56" column="63" lean-forward="false" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
-              <folding>
-                <marker date="1508668557026" expanded="true" signature="779:831" ph="SELECT * FRO... articles" />
-                <marker date="1508668557026" expanded="true" signature="3323:3401" ph="SELECT * FRO... articles" />
-                <marker date="1508668557026" expanded="true" signature="5887:5965" ph="SELECT * FRO... articles" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="secret_santa.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="secret_santa.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/secret_santa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+            <state relative-caret-position="340">
+              <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -88,34 +74,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_user.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create_user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/secure/create_user.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
               <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/secure/add_post.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-              <folding>
-                <marker date="1508668855276" expanded="true" signature="721:775" ph="SELECT `id` articles_categories" />
-                <marker date="1508668855276" expanded="true" signature="721:776" ph="SELECT `id` articles_categories" />
-                <marker date="1508668855276" expanded="true" signature="721:778" ph="SELECT `id` articles_categories" />
-                <marker date="1508668855276" expanded="true" signature="721:779" ph="SELECT `id` articles_categories" />
-                <marker date="1508668855276" expanded="true" signature="721:799" ph="SELECT `id` articles_categories" />
-                <marker date="1508668855276" expanded="true" signature="721:800" ph="SELECT `id` articles_categories" />
-                <marker date="1508668855276" expanded="true" signature="721:801" ph="SELECT `id` articles_categories" />
-                <marker date="1508668855276" expanded="true" signature="893:1018" ph="INSERT INTO `articles`... " />
-                <marker date="1508668855276" expanded="true" signature="893:1019" ph="INSERT INTO `comments`... " />
-                <marker date="1508668855276" expanded="true" signature="1224:1236" ph="..." />
-                <marker date="1508668855276" expanded="true" signature="2486:2535" ph="SELECT `titl... articles_categories" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -174,7 +138,6 @@
         <option value="$PROJECT_DIR$/secret_santa.php" />
         <option value="$PROJECT_DIR$/pages/files/d d d" />
         <option value="$PROJECT_DIR$/pages/files/andrii_hordynskyi_patronymic.txt" />
-        <option value="$PROJECT_DIR$/pages/secret_santa.php" />
         <option value="$PROJECT_DIR$/testimg.php" />
         <option value="$PROJECT_DIR$/add_post.php" />
         <option value="$PROJECT_DIR$/admin/secure/add_post.php" />
@@ -184,6 +147,7 @@
         <option value="$PROJECT_DIR$/admin/secure/login.php" />
         <option value="$PROJECT_DIR$/admin/secure/secure.inc.php" />
         <option value="$PROJECT_DIR$/admin/secure/create_user.php" />
+        <option value="$PROJECT_DIR$/pages/secret_santa.php" />
       </list>
     </option>
   </component>
@@ -232,12 +196,6 @@
               <item name="myblog.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="myblog.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="myblog.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myblog.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="secure" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="myblog.loc" type="b2602c69:ProjectViewProjectNode" />
@@ -297,18 +255,17 @@
       <option name="presentableId" value="Default" />
       <updated>1508263289883</updated>
       <workItem from="1508263296202" duration="46238000" />
-      <workItem from="1508663472033" duration="6966000" />
+      <workItem from="1508663472033" duration="7477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53204000" />
+    <option name="totallyTimeSpent" value="53715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1323752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1323752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -596,14 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/secret_santa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -653,6 +602,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/wow_wow_wow.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/valera_valera_valera.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/azanzar_nazar_nazar.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/andrii_andrii_andrii.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/secret_santa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
           <folding />
         </state>
       </provider>

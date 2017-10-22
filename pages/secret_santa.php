@@ -52,7 +52,7 @@ function createFiles()
 //        echo "<br>";
         $sender = $value['Who'];
         $receiver = $value["Whom"];
-        $f = fopen("files/".trim($sender['value']).".txt", 'w');
+        $f = fopen(trim($sender['value']).".txt", 'w');
         fwrite($f, $receiver['value']);
         fclose($f);
     }
