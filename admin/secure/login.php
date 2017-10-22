@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $pw = trim(strip_tags($_POST["pw"]));
     $ref = trim(strip_tags($_POST["ref"]));
     if (!$ref) {
-        $ref = "/eshop/admin/";
+        $ref = "/";
     }
     if ($login && $pw) {
         if ($result = userExists($login)) {

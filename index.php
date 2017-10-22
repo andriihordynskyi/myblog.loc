@@ -13,7 +13,7 @@ include "includes/doc.php";
                 <section class="content__left col-md-8">
                     <div class="block">
                         <a href="/articles.php" style="margin-left:20px;">Все записи</a>
-                        <a href="/add_post.php">Добавить запись</a>
+                        <a href="/admin/secure/add_post.php">Добавить запись</a>
                         <h3>Новейшее_в_блоге</h3>
                         <div class="block__content">
                             <div class="articles articles__horizontal">
