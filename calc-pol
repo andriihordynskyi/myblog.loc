@@ -1,0 +1,148 @@
+<?php
+
+
+/* калькулятор
+* – в текстове поле вводити числа, знаки арифметичних операцій. Після натиснення = вираз
+ аналізується (розставляються пріорітети операцій , відслідковуються дужки і обчислюється
+ значення виразу) і виводиться значення на екран
+
+Використано алгоритм зворотнього польського запису
+
+*/
+
+function zpz($row)
+{
+    $stack =[];
+    $out = [];
+
+    $prior = [
+        "*" => ["prior" => "3"],
+        "/" => ["prior" => "3"],
+        "+" => ["prior" => "2"],
+        "-" => ["prior" => "2"],
+    ];
+
+    $arr_row = preg_replace("/\s/", "", $row);
+    $arr_row = str_replace(",", ".", $arr_row);
+    $arr_row = str_split($arr_row);
+
+    if (preg_match("/[\+\-\*\/]/", $arr_row['0'])) {
+        array_unshift($arr_row, "0");
+    }
+
+    $lastnum = TRUE; //маркер цифри
+
+    foreach ($arr_row  as $key => $value) {
+
+        if (preg_match("/[\+\-\*\/]/", $value))
+        {
+            $endop = FALSE; 
+
+            while ($endop != TRUE) {
+                $lastop = array_pop($stack);
+                if ($lastop == "") {
+                    $stack[] = $value;
+                    $endop = TRUE;
+                } else { 
+                    $curr_prior = $prior[$value]['prior']; //поточний оператор
+                    $prev_prior = $prior[$lastop]['prior']; //попередній
+
+                    //розмsщуэмо оператори в стековs в порядку пріоритетів
+                    if($curr_prior > $prev_prior) {
+                         $stack[] = $lastop;
+                         $stack[] = $value;
+                         $endop = TRUE;
+                    }else{
+                          $out[] = $lastop;
+                    }
+               }
+            }
+            $lastnum = false;
+        } elseif (preg_match("/[0-9\.]/", $value))
+        {
+            if ($lastnum == TRUE) //якщо останній симфол цифра додаємо циру або кроапку до попередьої цифри
+            {
+                $num = array_pop($out);
+                $out[] = $num . $value;
+            } else {
+                $out[] = $value;
+                $lastnum = TRUE;
+            }
+        } elseif ($value == "(") 
+        {
+            $stack[] = $value;
+            $lastnum = FALSE;
+        } elseif ($value == ")")
+        {
+            $dug = FALSE; 
+            while ($dug != TRUE)
+            {
+                $op = array_pop($stack);
+                if ($op == "(") {
+                    $dug = TRUE; 
+                } else {
+                    $out[] = $op;
+                }
+            }
+            $lastnum = FALSE;
+        }
+    }
+
+    $resultout = $out;
+
+    while ($stack_el = array_pop($stack)) {
+        $resultout[] = $stack_el;
+    }
+
+    //отриманий масив в рядок
+    $zpz_row = implode(" ", $resultout);
+    return $zpz_row;
+}
+
+function calc($row)
+{
+    $stack = [];
+    $row = strtok($row, ' ');
+
+    while ($row !== false)
+    {
+        if (in_array($row, array('*', '/', '+', '-'))){
+            if (count($stack) < 2)
+                throw new Exception("невірний вираз '$row'");
+            $b = array_pop($stack);
+            $a = array_pop($stack);
+            switch ($row)
+            {
+                case '*': $res = $a*$b; break;
+                case '/': $res = $a/$b; break;
+                case '+': $res = $a+$b; break;
+                case '-': $res = $a-$b; break;
+            }
+            array_push($stack, $res);
+        } elseif (is_numeric($row)) {
+            array_push($stack, $row);
+        } else {
+            throw new Exception("недопустимий символ: $row");
+        }
+
+        $row = strtok(' ');
+    }
+    if (count($stack) > 1)
+        throw new Exception("кількість опреаторів не відповідає кількості операндів");
+    return array_pop($stack);
+}
+
+
+$row = $_POST['v2'];
+$res = zpz($row);
+$result =  calc($res);
+?>
+
+
+
+
+<form method="post" action = "<?php $_PHP_SELF ?>" >
+<input type="text" name="v2" value ="<?php echo $row ?>">
+    <input type="submit" name="res" value="=">
+    <input type="text" name="res2" value = "<?php echo $result?>">
+</form>
